@@ -68,7 +68,9 @@ function integerToHex(color) {
           return;
         }
         if(atributo == 'active-color'){
-            document.alinkColor = `${color}`;
+           // document.alinkColor = `${color}`;
+           //document.documentElement.style.setProperty('a:active', `${color}`);
+           document.documentElement.style.setProperty('--variable', `${color}`);
             
         }
         if(atributo == 'visited-color'){
