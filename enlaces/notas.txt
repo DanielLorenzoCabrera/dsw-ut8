@@ -1,0 +1,16 @@
+1. document.fgColor está en desuso en DOM Nivel 2 HTML . 
+La alternativa recomendada es el color de la propiedad CSS 
+(por ejemplo, document.body.style.color = "red" ).
+Color del texto del documento
+
+2. El bgcolor atributo especifica el color de fondo de un documento.
+bgcolor atributo no es compatible con HTML5. Usar CSS en su lugar.
+
+3. LinkColor. Representa el color que tendrá un enlace por defecto. Se encuentra deprecada, 
+mejor usar css.
+
+4. aLinkColor Devuelve o define el color que tendrán los vínculos activos en el cuerpo
+document.alinkColor es obsoleto en DOM Level 2 HTML. Una alternativa es el selector CSS :active.
+
+5. vLinkColor. Representa el color de los links visitados. Obsoleto.
+

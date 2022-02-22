@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.wrapper a, p{
+    font-size: 2em;
+    margin: .5em 0;
+}
+
+
+
+.popup{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 3em;
+    right: 1em;
+    height: 400px;
+    width:400px;
+    padding: 1em;
+    background-color: cornflowerblue;
+    font-size: 1.5em;
+}
+
+.popup label{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+
+

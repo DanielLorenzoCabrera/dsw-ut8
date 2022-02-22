@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad enlaces</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <p>Texto de muestra para comprobar el color del primer plano</p>
+        <a href="#" class="abrir-popup">Cambiar los colores de esta ventana</a>
+        <a href="#" class="visitado">Vínculo visitado</a>
+        <a href="#" class="sin-visitar">Vínculo sin visitar</a>
+    </div>
+    <div class="popup">
+        <label>
+            Elija una propierdad
+            <select class="atributo">
+                <option value="bg-color">Background Color</option>
+                <option value="font-color">Font color</option>
+                <option value="link-color">Link color</option>
+                <option value="active-color">Active link color</option>
+                <option value="visited-color">Visited link color</option>
+            </select>
+        </label>
+        <p>Elige el color</p>
+        <label>
+            Rojo (0-255)
+            <input class="red" type="number" name="red" min="0" max="255">
+        </label>
+        <label>
+            Verde (0-255)
+            <input class="green" type="number" name="green" min="0" max="255">
+        </label>
+        <label>
+            Azul (0-255)
+            <input class="blue" type="number" name="blue" min="0" max="255">
+        </label>
+        <button class="cambiar-color">Cambiar color</button>
+        <button class="cerrar">Cerrar</button>
+    </div>
+</body>
+</html>
