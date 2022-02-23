@@ -1,13 +1,7 @@
 document.addEventListener("DOMContentLoaded", obtenerLinks);
 
 function obtenerLinks(){
-    const links = document.querySelectorAll('a');
-    links.forEach(link => {
-        link.addEventListener("click", ()=>{
-            link.classList.add('visitado');
-        })
-        
-    })
+    
     document.querySelector('.abrir-popup').addEventListener("click", popup);
     document.querySelector('.cerrar').addEventListener("click", popup);
     document.querySelector('.cambiar-color').addEventListener("click", cambiarColor);
@@ -18,7 +12,7 @@ function obtenerLinks(){
 
 function popup(){
     const popup =  document.querySelector('.popup');
-    popup.style.display = popup.style.display === 'none' ? 'flex' : 'none';
+    popup.style.display = popup.style.display === 'none' || popup.style.display === '' ? 'flex' : 'none';
 }
 
 
@@ -68,16 +62,15 @@ function integerToHex(color) {
           return;
         }
         if(atributo == 'active-color'){
-           // document.alinkColor = `${color}`;
-           //document.documentElement.style.setProperty('a:active', `${color}`);
-           document.documentElement.style.setProperty('--variable', `${color}`);
+           document.documentElement.style.setProperty('--activo', `${color}`);
             
         }
         if(atributo == 'visited-color'){
-            const visitados = document.querySelectorAll('.visitado');
-            visitados.forEach(enlace =>{
-                enlace.style.color = `${color}`;
-            })
+            //const visitados = document.querySelectorAll('.visitado');
+            //visitados.forEach(enlace =>{
+              //  enlace.style.color = `${color}`;
+            //})
+            document.documentElement.style.setProperty('--visitado', `${color}`);
         }
       
   }
