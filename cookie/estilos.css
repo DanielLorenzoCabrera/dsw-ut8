@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button{
+    padding: 1em;
+    border: 0;
+    border-radius: .3em;
+    font-size: 2em;
+    cursor: pointer;
+    margin: 0 .5em;
+}
+
+.botones{
+    margin: 1em 0;
+}
